@@ -21,7 +21,7 @@ jobs:
         with:
           tokenPrefix: '__'
           tokenSuffix: '__'
-          files: '["**/*.tf"]'
+          files: '["*.tf"]'
         # env:
         #   CDN: https://somecdn.com/...
 
