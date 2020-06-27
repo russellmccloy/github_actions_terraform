@@ -25,6 +25,9 @@ jobs:
         env:
           CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
 
+      - name: Bash for GitHub Actions
+        uses: jcblw/bash@1.0.0
+        
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v1
 
