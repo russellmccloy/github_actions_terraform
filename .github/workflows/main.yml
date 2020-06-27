@@ -11,7 +11,7 @@ on:
 #   # DOTNET_VERSION: '2.2.101'
 
 jobs:
-  login and deploy to Azure:
+  login-and-deploy-to-Azure:
     runs-on: ubuntu-latest
     steps:
 
