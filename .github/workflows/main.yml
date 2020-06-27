@@ -12,11 +12,6 @@ jobs:
 
       - uses: actions/checkout@master
 
-      # - name: Login via Azure CLI
-      #   uses: azure/login@v1
-      #   with:
-      #     creds: ${{ secrets.CREDS_SUB_LEVEL }}
-
       - uses: cschleiden/replace-tokens@v1
         with:
           tokenPrefix: '__'
