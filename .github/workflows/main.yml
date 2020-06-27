@@ -17,12 +17,19 @@ jobs:
         with:
           creds: ${{ secrets.MY_CREDENTIALS_AS_GITHUB_SECRET }}
 
+      - uses: cschleiden/replace-tokens@v1
+        with:
+          tokenPrefix: '__'
+          tokenSuffix: '__'
+          files: '["**/*.tf"]'
+        # env:
+        #   CDN: https://somecdn.com/...
 
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v1
 
       - name: Terraform Init
         run: terraform init
-        
+
       - name: Terraform Plan
         run: terraform plan
