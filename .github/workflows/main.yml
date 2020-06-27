@@ -5,10 +5,10 @@ on:
     branches:
       - master
 
-env:
-  # AZURE_WEBAPP_NAME: csweb0619202
-  # AZURE_WEBAPP_PATH: '.'
-  # DOTNET_VERSION: '2.2.101'
+# env:
+#   # AZURE_WEBAPP_NAME: csweb0619202
+#   # AZURE_WEBAPP_PATH: '.'
+#   # DOTNET_VERSION: '2.2.101'
 
 jobs:
   build-and-deploy:
@@ -22,7 +22,7 @@ jobs:
         with:
           creds: ${{ secrets.MY_CREDS_AS_GITHUB_SECRET }}
 
-          
+
       # - name: SETUP .NET CORE
       #   uses: actions/setup-dotnet@v1
       #   with:
