@@ -15,7 +15,7 @@ jobs:
       - name: Login via Azure CLI
         uses: azure/login@v1
         with:
-          creds: ${{ secrets.CREDS_SUB_LEVEL }}
+          creds: ${{ secrets.CREDS_SUB_LEVEL_FOR_AZ_LOGIN }}
 
       - uses: cschleiden/replace-tokens@v1
         with:
