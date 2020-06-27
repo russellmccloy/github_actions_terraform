@@ -5,11 +5,6 @@ on:
     branches:
       - master
 
-# env:
-#   # AZURE_WEBAPP_NAME: csweb0619202
-#   # AZURE_WEBAPP_PATH: '.'
-#   # DOTNET_VERSION: '2.2.101'
-
 jobs:
   login-and-deploy-to-Azure:
     runs-on: ubuntu-latest
@@ -29,7 +24,10 @@ jobs:
         #  cli_config_credentials_token: ${{ secrets.TF_API_TOKEN }}
 
       - name: Terraform Init
-        run: terraform init      
+        run: terraform init
+
+      - name: Terraform Plan
+        run: terraform plan    
         
       #   uses: actions/setup-dotnet@v1
       #   with:
