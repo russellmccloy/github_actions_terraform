@@ -23,7 +23,7 @@ jobs:
           tokenSuffix: '__'
           files: '["*.tf"]'
         env:
-          CLIENT_SECRET: ${{ }}
+          CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
 
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v1
