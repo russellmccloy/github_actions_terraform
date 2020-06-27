@@ -22,8 +22,8 @@ jobs:
           tokenPrefix: '__'
           tokenSuffix: '__'
           files: '["*.tf"]'
-        # env:
-        #   CDN: https://somecdn.com/...
+        env:
+          CLIENT_SECRET: ${{ }}
 
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v1
