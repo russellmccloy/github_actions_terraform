@@ -20,7 +20,7 @@ jobs:
       - name: Login via Azure CLI
         uses: azure/login@v1
         with:
-          creds: ${{ secrets.MY_CREDS_AS_GITHUB_SECRET }}
+          creds: ${{ secrets.MY_CREDENTIALS_AS_GITHUB_SECRET }}
 
 
       # - name: SETUP .NET CORE
