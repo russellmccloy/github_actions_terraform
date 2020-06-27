@@ -24,6 +24,7 @@ jobs:
           files: '["*.tf"]'
         env:
           CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
+          STORAGE_FOR_STATE_KEY: ${{ secrets.STORAGE_FOR_STATE_KEY }}
 
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v1
