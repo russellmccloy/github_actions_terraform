@@ -25,6 +25,14 @@ jobs:
         env:
           CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
 
+      - uses: actions/github-script@v2
+        id: set-result
+        with:
+          script: return "Hello!"
+          result-encoding: string
+      - name: Get result
+        run: echo "${{steps.set-result.outputs.result}}"
+
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v1
 
