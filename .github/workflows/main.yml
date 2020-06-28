@@ -6,7 +6,7 @@ on:
       - master
 
 jobs:
-  login-and-deploy-to-Azure:
+  deploy-to-Azure-with-Terraform:
     runs-on: ubuntu-latest
     steps:
 

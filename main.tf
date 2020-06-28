@@ -9,4 +9,6 @@ resource "azurerm_storage_account" "sa" {
   location                 = "Australia East"
   account_tier             = "Standard"
   account_replication_type = "GRS"
+
+  depends_on = [azurerm_storage_account.sa]
 }
