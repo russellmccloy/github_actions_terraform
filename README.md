@@ -48,7 +48,7 @@ The action checks out the code from the `master branch` to the ubuntu agent's fi
 
 As we mentioned github Actions Secrets above, this is where we replace tokens in our `Terraform` files with the real values from our secrets
 
-```json
+```hcl
 provider "azurerm" {
   version = "~> 2.0"
   features {}
@@ -72,7 +72,7 @@ provider "azurerm" {
 
 The rest of the file sets up Terraform, runs INIT, PLAN and APPLY:
 
-```cmd
+```yaml
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v1
 
