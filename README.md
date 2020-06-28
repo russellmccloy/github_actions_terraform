@@ -1,5 +1,7 @@
 # GitHub Actions with Terraform
 
+![Deploy Resource Group and storage account Via Terraform using Github Actions](https://github.com/russellmccloy/github_actions_terraform/workflows/Deploy%20Resource%20Group%20Via%20Terraform/badge.svg)
+
 This repository demonstrates using GitHub Actions to deploy Azure resources with Terraform. It deploys a `resource group` and a `storage account`
 
 It uses Github secrets to store the `client secret` for the `providers.tf` file and the storage account key for the `backend.tf` file.
@@ -86,10 +88,8 @@ The rest of the file sets up Terraform, runs INIT, PLAN and APPLY:
 ```
 
 the gitGub Action runs these in an easy to understand viewer:
-
+![action_running.png](readme_images/action_running.png)
 
 
 the final deployed result is as follows:
 ![Deployed](readme_images/az-sa-created.png)
-
-![Deploy Resource Group and storage account Via Terraform using Github Actions](https://github.com/russellmccloy/github_actions_terraform/workflows/Deploy%20Resource%20Group%20Via%20Terraform/badge.svg)
