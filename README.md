@@ -1,6 +1,7 @@
 # GitHub Actions with Terraform
 
-![Deploy Resource Group and storage account Via Terraform using Github Actions](https://github.com/russellmccloy/github_actions_terraform/workflows/Deploy%20Resource%20Group%20Via%20Terraform/badge.svg)
+Note that you can get the markdows for a status badge to put in your README from the Action home page:
+![Deploy Azure Resources](https://github.com/russellmccloy/github_actions_terraform/workflows/Deploy%20Azure%20Resources/badge.svg)
 
 This repository demonstrates using GitHub Actions to deploy Azure resources with Terraform. It deploys a `resource group` and a `storage account`
 
