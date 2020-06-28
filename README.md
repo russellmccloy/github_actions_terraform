@@ -4,7 +4,7 @@
 
 This repository demonstrates using GitHub Actions to deploy Azure resources with Terraform. It deploys a `resource group` and a `storage account`
 
-It uses Github secrets to store the `client secret` for the `providers.tf` file and the storage account key for the `backend.tf` file.
+It uses Github secrets to store the `client secret` for the `providers.tf` file and the `storage account key` for the `backend.tf` file.
 
 ![Secrets](readme_images/github-secrets.png)
 the terraform state is storage in a container in an already created storage account in Azure.
